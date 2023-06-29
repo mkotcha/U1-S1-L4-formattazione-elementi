@@ -53,11 +53,13 @@ nav a {
 /* ELEMENTI NEL MAIN - ARTICLE */
 main {
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 article {
-  margin: 1rem;
-  padding: 1rem;
 }
 
 article h1 {
@@ -69,14 +71,16 @@ article h1 {
   padding-bottom: 2rem;
 }
 
-article a {
-  color: #3366cc;
+article a,
+.related-box a {
+  color: #01a4ca;
   font-weight: 600;
 }
 
 iframe {
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .author {
   color: gray;
@@ -108,27 +112,38 @@ article ol li {
 }
 
 .new {
-  margin: 1rem;
   padding: 1rem;
   background-color: rgb(219, 221, 223);
   margin-bottom: 3em;
 }
 
 .new h2,
-.related h2 {
+.related-box h2 {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 2rem;
 }
 
-.new button {
-  background-color: #3366cc;
-  color: white;
+.related-box div {
+  background-color: rgb(219, 221, 223);
+  border: 1px solid grey;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.related-box div > p:first-child {
+  padding-bottom: 0;
+}
+
+.related-box div > p:last-child {
+  text-align: right;
+  font-size: 1rem;
 }
 /* TABELLE */
 
 .table {
   font-size: 1.2rem;
+  display: table;
 }
 .table-title {
   /* font-size: 1.8rem; */
@@ -137,22 +152,67 @@ article ol li {
   text-align: center;
 }
 
-div.first-table-row {
-  background-color: #3366cc;
+.table-row {
+  display: table-row;
+  width: auto;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: #eeeeee;
+}
+
+.table-row:nth-of-type(2) {
+  background-color: #3366cc !important;
   color: white;
 }
 
 .table-cell {
   display: inline-block;
-  width: 20%;
   padding: 0.8rem;
+  display: table-cell;
 }
 
 .table-row-col {
-  background-color: aliceblue;
 }
 /* FORM */
+
+#fform {
+}
+
+.new form * {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  height: 2rem;
+}
+
+.new input {
+  border: none;
+  border-bottom: dashed 1px black;
+  width: auto;
+}
+
+.new button {
+  background-color: #3366cc;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
 
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
+
+footer {
+  background-image: linear-gradient(#0c5664, #013141);
+  margin: 1rem;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+footer a {
+  color: purple;
+}
