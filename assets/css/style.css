@@ -12,6 +12,11 @@ body {
   background-position: center;
 }
 
+p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-bottom: 1.2rem;
+}
 /* HEADER */
 
 header {
@@ -21,6 +26,7 @@ header {
   padding: 1em;
   color: white;
   font-weight: 600;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 figure > img {
@@ -45,9 +51,84 @@ nav a {
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+article {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
 
+article h1 {
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+article a {
+  color: #3366cc;
+  font-weight: 600;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+.author {
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.main-article strong {
+  color: purple;
+  font-weight: 600;
+}
+article ul,
+article ol {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+article ul li,
+article ol li {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.code {
+  display: inline-block;
+  background-color: rgb(199, 199, 199);
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
 /* TABELLE */
 
+.table {
+  font-size: 1.2rem;
+}
+.table-title {
+  /* font-size: 1.8rem; */
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+}
+
+div.first-table-row {
+  background-color: #3366cc;
+  color: white;
+}
+
+.table-cell {
+  display: inline-block;
+  width: 20%;
+  padding: 0.8rem;
+}
+
+.table-row-col {
+  background-color: aliceblue;
+}
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
